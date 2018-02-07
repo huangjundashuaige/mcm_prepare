@@ -1,0 +1,21 @@
+<p>
+    based on the isolated virus spreading model,we now want to scale it to multiple city,
+and the idea is simple,which is to simulate the behavior of real time virus spreading among countrys
+of the real world as much as possible.
+    so follow the overall idea,we assumpt that the only way to bring virus from country to country 
+is through human traffic which is much realistic because there will be shelters stand right on the 
+boundary of two countries and it keeps the animal which can brought the virus away.
+    as for details,we gather some data about going aboard with the data of gdp and population of
+some countries like us china japan korea.then we draw a conclusion that the population
+travel aboard has strongly positive relation with this country's gdp and population.
+so we build a simulation model which simulate the day-to-day interaction among countries
+which to be specific is that we first creat a class called country which has all the functionality
+we need to operate the whole simulation.and each individual country has its private variable which
+will be population gdp and the land area.and we also take the unit times as one day and use it as one iteration of
+single loop.deep in the loop there just be some interaction like travel out and travel in activity
+and there will be probability that the going aboard people will include someone which infected by
+the virus.
+    finally after the interaction,we use the previous isolated model.by providing the updated
+data like population and within them how many people infected by the virus as 
+the input of differential equation and we will get the next day state of variable so we can update
+the countrys state.
